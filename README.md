@@ -2,7 +2,31 @@
   <img src="1.png" alt="Nutri-Cart Logo">
 </p>
 
-Nutri-Cart is a personalized grocery shopping app designed to simplify the process of balancing nutrition, time, and budget constraints. Developed with the needs of college students, parents, and budget-conscious individuals in mind, Nutri-Cart offers tailored recommendations for maximizing nutrition, affordability, or quality based on user preferences.
+Video: https://youtu.be/WqpZ2eCeidM
+
+Nutri-Cart is a personalized grocery shopping web app designed to simplify the process of balancing nutrition, time, and budget constraints. Developed with the needs of college students, parents, and budget-conscious individuals in mind, Nutri-Cart offers tailored recommendations for maximizing nutrition, affordability, or quality based on user preferences.
+
+## Try it out!
+
+```bash
+# 1. Clone the repository.
+git clone https://github.com/SreeyuR/hacktech-final.git
+
+# 2. Navigate to the directory where the website is located.
+cd nutr-cart-new
+
+# 3. Make sure you have a local server set up. VS code is recommended.
+
+# 4. Navigate to `index.html` and press "Live Server" on the bottom right of vs code to host the webpage.
+
+# 5. Create an account and you're in!
+
+# 6. To try the ML model
+    # a. Navigate into the root directory of this project.
+      cd ..
+    # b. Run the ML model.
+      python3 heartdisease_model
+```
 
 ## Features:
 - **Personalized Recommendations:** Complete a questionnaire to customize your shopping experience based on lifestyle, dietary needs, and budget goals.
