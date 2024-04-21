@@ -1,25 +1,13 @@
-// import { getDatabase, ref, push, set } from "firebase/database";
-// import { getAuth } from "firebase/auth";
-
-// // Your web app's Firebase configuration
-// const firebaseConfig = {
-//     apiKey: "AIzaSyDZz0AonEUGTTqSnIoizPwf_GI9flU7L54",
-//     authDomain: "login-page-demo-5c1d2.firebaseapp.com",
-//     projectId: "login-page-demo-5c1d2",
-//     storageBucket: "login-page-demo-5c1d2.appspot.com",
-//     messagingSenderId: "999655653673",
-//     appId: "1:999655653673:web:98141bee89d6f5b59f7738"
-// };
-
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDcFl78VzJP1lSk1ow6BZcQaPmYNY7Wih8",
-  authDomain: "nutri-cart-hacktech-aa840.firebaseapp.com",
-  databaseURL: "https://nutri-cart-hacktech-aa840-default-rtdb.firebaseio.com",
-  projectId: "nutri-cart-hacktech-aa840",
-  storageBucket: "nutri-cart-hacktech-aa840.appspot.com",
-  messagingSenderId: "407727971156",
-  appId: "1:407727971156:web:64d23f447b46773ea306c1"
+    apiKey: "AIzaSyDZz0AonEUGTTqSnIoizPwf_GI9flU7L54",
+    authDomain: "login-page-demo-5c1d2.firebaseapp.com",
+    projectId: "login-page-demo-5c1d2",
+    storageBucket: "login-page-demo-5c1d2.appspot.com",
+    messagingSenderId: "999655653673",
+    appId: "1:999655653673:web:98141bee89d6f5b59f7738"
 };
+
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -27,29 +15,23 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth()
 const database = firebase.database()
 
-// Create a new post reference with an auto-generated id
-const db = getDatabase();
-const postListRef = ref(db, 'posts');
-const newPostRef = push(postListRef);
-
 // Set up our register function
 function register () {
   // Get all our input fields
   email = document.getElementById('email').value
   password = document.getElementById('password').value
   full_name = document.getElementById('full_name').value
-//   favourite_song = document.getElementById('favourite_song').value // fav song is age
+  favourite_song = document.getElementById('favourite_song').value
+  milk_before_cereal = document.getElementById('milk_before_cereal').value
 
   // Validate input fields
   if (validate_email(email) == false || validate_password(password) == false) {
-    alert('Email or Password is Invalid.')
-    window.location.href = "index.html#login-pg-real";
+    alert('Email or Password is Outta Line!!')
     return
     // Don't continue running the code
   }
-  if (validate_field(full_name) == false) { // validate_field(favourite_song) == false
-    alert('One or More Fields is Invalid.')
-    window.location.href = "index.html#login-pg-real";
+  if (validate_field(full_name) == false || validate_field(favourite_song) == false || validate_field(milk_before_cereal) == false) {
+    alert('One or More Extra Fields is Outta Line!!')
     return
   }
  
@@ -66,7 +48,8 @@ function register () {
     var user_data = {
       email : email,
       full_name : full_name,
-      //favourite_song : favourite_song,
+      favourite_song : favourite_song,
+      milk_before_cereal : milk_before_cereal,
       last_login : Date.now()
     }
 
@@ -74,16 +57,14 @@ function register () {
     database_ref.child('users/' + user.uid).set(user_data)
 
     // DOne
-    // alert('New Account Created!')
-    window.location.href = "user.html#hi-user";
+    alert('User Created!!')
   })
   .catch(function(error) {
     // Firebase will use this to alert of its errors
     var error_code = error.code
     var error_message = error.message
 
-    alert("Incorrect username or password.")//alert(error_message)
-    window.location.href = "index.html#login-pg-real";
+    alert(error_message)
   })
 }
 
@@ -95,8 +76,7 @@ function login () {
 
   // Validate input fields
   if (validate_email(email) == false || validate_password(password) == false) {
-    alert('Email or Password is invalid.')
-    window.location.href = "index.html#login-pg-real";
+    alert('Email or Password is Outta Line!!')
     return
     // Don't continue running the code
   }
@@ -118,8 +98,7 @@ function login () {
     database_ref.child('users/' + user.uid).update(user_data)
 
     // DOne
-    // alert('User successfully logged in!')
-    window.location.href = "user.html#hi-user";
+    alert('User Logged In!!')
 
   })
   .catch(function(error) {
@@ -128,7 +107,6 @@ function login () {
     var error_message = error.message
 
     alert(error_message)
-    window.location.href = "index.html#login-pg-real";
   })
 }
 

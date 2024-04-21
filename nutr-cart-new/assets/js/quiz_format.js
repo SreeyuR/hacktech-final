@@ -13,3 +13,7 @@ function nextQuestion(questionId) {
         }
     }
 }
+
+function endQuiz() {
+    window.location.href = "user.html";
+}

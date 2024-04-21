@@ -1,0 +1,113 @@
+{
+  "stores": [
+    {
+      "name": "Trader Joe's",
+      "prices": {
+        "milk": 0.20,
+        "bread": 1.00,
+        "eggs": 2.00,
+        "apple": 1.00,
+        "banana": 0.50,
+        "Paradise in a Pineapple": 0
+      },
+      "carbs": {
+        "milk": 8,
+        "bread": 6,
+        "eggs": 10,
+        "apple": 2,
+        "banana": 3,
+        "Paradise in a Pineapple": 0
+      },
+      "sugar": {
+        "milk": 9,
+        "bread": 2,
+        "eggs": 3,
+        "apple": 4,
+        "banana": 5,
+        "Paradise in a Pineapple": 0
+      }
+
+    },
+    {
+      "name": "Aldi's",
+      "prices": {
+        "milk": 2.40,
+        "bread": 1.90,
+        "eggs": 3.10,
+        "apple": 1.10,
+        "banana": 0.55,
+        "Paradise in a Pineapple": 0
+      },
+      "carbs": {
+        "milk": 5,
+        "bread": 3,
+        "eggs": 2,
+        "apple": 9,
+        "banana": 7,
+        "Paradise in a Pineapple": 0
+      },
+      "sugar": {
+        "milk": 9,
+        "bread": 3,
+        "eggs": 7,
+        "apple": 4,
+        "banana": 2,
+        "Paradise in a Pineapple": 0
+      }
+    },
+    {
+      "name": "Pavilions",
+      "prices": {
+        "milk": 2.10,
+        "bread": 1.10,
+        "eggs": 3.10,
+        "apple": 1.10,
+        "banana": 0.15,
+        "Paradise in a Pineapple": 0
+      },
+      "carbs": {
+        "milk": 3,
+        "bread": 4,
+        "eggs": 6,
+        "apple": 0,
+        "banana": 3,
+        "Paradise in a Pineapple": 0
+      },
+      "sugar": {
+        "milk": 4,
+        "bread": 5,
+        "eggs": 7,
+        "apple": 8,
+        "banana": 3,
+        "Paradise in a Pineapple": 0
+      }
+    },
+    {
+      "name": "Cheesecake Factory",
+      "prices": {
+        "milk": 0,
+        "bread": 0,
+        "eggs": 0,
+        "apple": 0,
+        "banana": 0,
+        "Paradise in a Pineapple": 11.95
+      },
+      "carbs": {
+        "milk": 0,
+        "bread": 0,
+        "eggs": 0,
+        "apple": 0,
+        "banana": 0,
+        "Paradise in a Pineapple": 64
+      },
+      "sugar": {
+        "milk": 0,
+        "bread": 0,
+        "eggs": 0,
+        "apple": 0,
+        "banana": 0,
+        "Paradise in a Pineapple": 62
+      }
+    }
+  ]
+}
