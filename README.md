@@ -1,7 +1,5 @@
-# Nutri-Cart
-
 <p align="center">
-  <img src="image_url_here" alt="Nutri-Cart Logo">
+  <img src="1.png" alt="Nutri-Cart Logo">
 </p>
 
 Nutri-Cart is a personalized grocery shopping app designed to simplify the process of balancing nutrition, time, and budget constraints. Developed with the needs of college students, parents, and budget-conscious individuals in mind, Nutri-Cart offers tailored recommendations for maximizing nutrition, affordability, or quality based on user preferences.
