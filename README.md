@@ -25,7 +25,7 @@ cd nutr-cart-new
     # a. Navigate into the root directory of this project.
       cd ..
     # b. Run the ML model.
-      python3 heartdisease_model
+      python3 heartdisease_model.py
 ```
 
 ## Features:
