@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../img/veg.png');
+  background-size: cover;
+  background-position: center;
+  font-family: 'verdana';
+}
+
+.form {
+  margin-top: 50px;
+  width: 400px;
+  height: 400px;
+  color: #000;
+  font-family: 'verdana';
+}
+
+.form li {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'verdana';
+  break-inside: avoid;
+  /* Avoid breaking inside list items */
+}
+
+input,
+.submit-btn {
+  width: 80%;
+  font-size: 20px;
+  height: 50px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+  background: rgba(119, 224, 127, 0.7);
+  border: none;
+  color: #d32a2a;
+  padding: 15px;
+  transition: .5s;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: 'verdana';
+}
+
+input::placeholder {
+  color: #000;
+}
+
+input:focus,
+.submit-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+input:focus::placeholder {
+  color: #000;
+}
+
+.submit-btn {
+  width: auto;
+  padding: 0 20px;
+  cursor: pointer;
+  margin: 50px auto 0;
+  font-family: 'verdana';
+}
+
+.link {
+  text-align: center;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+  margin: 30px auto;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+
+#summaryContainer {
+  color: #fff;
+  position: absolute;
+  top: 600px;
+  /* Adjust top positioning */
+  right: -50;
+  /* Adjust right positioning */
+  padding: 10px;
+  /* Add padding for spacing */
+  font-family: 'verdana';
+}
+
+.summary-button {
+  background-color: #E6E6E6;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 5px;
+  /* Add margin between buttons */
+  display: block;
+  /* Ensure each button is on its own line */
+  font-family: 'verdana';
+}
+
+.summary-button:hover {
+  background-color: #FFC0CB;
+}
+
+#dropdown {
+  position: absolute;
+  border-radius: 10px;
+  top: 110px;
+  width: 200px;
+  /* Adjust the width as needed */
+  padding: 8px;
+  /* Adjust the padding as needed */
+  font-size: 16px;
+  /* Adjust the font size as needed */
+}

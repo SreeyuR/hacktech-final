@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'verdana';
+    font-weight: normal;
+}
+
+body {
+    background: #becebe;
+}
+.app {
+    margin-top: 50px;
+    text-align: center;
+    background: #becebe;
+}
+
+.app h1 {
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 50%; 
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+}
+
+.btn3 {
+    margin: 10px;
+    width: calc(30% - 5px); 
+    height: 150px; 
+    border-radius: 25px; 
+    background-color: white; 
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn1 {
+    margin: 10px;
+    width: calc(40% - 5px); 
+    height: 150px; 
+    border-radius: 25px; 
+    background-color: white; 
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn2 {
+    margin: 10px; 
+    width: calc(30% - 20px); 
+    height: 300px; 
+    border-radius: 25px; 
+    background-color: white; /* Button background color */
+    font-size: 24px; /* Button font size */
+    border: none; /* Remove border */
+    cursor: pointer; /* Cursor style */
+    transition: all 0.3s; /* Transition for hover effect */
+}
+
+.btn:hover, .btn1:hover, .btn2:hover, .btn3:hover {
+    border: 1px solid #000;
+}
+
+.end-page {
+    margin-top: 20%;
+}

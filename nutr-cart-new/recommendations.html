@@ -1,70 +1,134 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Store - Brand</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/Lora.css">
-    <link rel="stylesheet" href="assets/css/Raleway.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="assets/css/Login-Form-Basic.css">
-    <link rel="stylesheet" href="assets/css/untitled.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/quiz_style.css">
 </head>
+<body>
+<div class = "app">
+<div class = "question" id = "question1">
+    <h1 id="question">What are you looking to prioritize?</h1>
+    <div id="answer-buttons">
+        <button class="btn1" onclick="nextQuestion('question2')">Price & Affordability</button>
+        <button class="btn1" onclick="nextQuestion('question2')">Convenience & Accessibility</button>
+        <button class="btn1" onclick="nextQuestion('question2')">Freshness & Quality</button>
+        <button class="btn1" onclick="nextQuestion('question2')">Health & Nutrition</button>
+    </div>
+</div>
 
-<body style="background:linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url('bg.jpg');">
-    <h1 class="text-center text-white d-none d-lg-block site-heading"><span class="text-primary site-heading-upper mb-3">A Free Bootstrap 5 Business Theme&nbsp;</span><span class="site-heading-lower">Business Casual</span></h1>
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark pulse animated py-lg-4" id="mainNav" style="color: rgb(255,255,255);background: rgba(20,13,13,0.78);box-shadow: 0px 0px;text-shadow: 1px 0px 6px rgb(0,0,0);">
-        <div class="container"><a class="navbar-brand text-uppercase d-lg-none text-expanded" href="#">Brand</a><button class="navbar-toggler" data-bs-toggle="collapse"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
-    </nav>
-    <section class="page-section cta">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-9 mx-auto">
-                    <div class="text-center cta-inner rounded">
-                        <h2 class="section-heading mb-5"><span class="section-heading-upper">Come On In</span><span class="section-heading-lower">We're Open</span></h2>
-                        <ul class="list-unstyled text-start mx-auto list-hours mb-5">
-                            <li class="d-flex list-unstyled-item list-hours-item">Sunday<span class="ms-auto">Closed</span></li>
-                            <li class="d-flex list-unstyled-item list-hours-item">Monday<span class="ms-auto">7:00 AM to 8:00 PM</span></li>
-                            <li class="d-flex list-unstyled-item list-hours-item">Tuesday<span class="ms-auto">7:00 AM to 8:00 PM</span></li>
-                            <li class="d-flex list-unstyled-item list-hours-item">Wednesday<span class="ms-auto">7:00 AM to 8:00 PM</span></li>
-                            <li class="d-flex list-unstyled-item list-hours-item">Thursday<span class="ms-auto">7:00 AM to 8:00 PM</span></li>
-                            <li class="d-flex list-unstyled-item list-hours-item">Friday<span class="ms-auto">7:00 AM to 8:00 PM</span></li>
-                            <li class="d-flex list-unstyled-item list-hours-item">Saturday<span class="ms-auto">9:00 AM to 5:00 PM</span></li>
-                        </ul>
-                        <p class="address mb-5"><em><strong>1116 Orchard Street</strong><span><br>Golden Valley, Minnesota</span></em></p>
-                        <p class="address mb-0"><small><em>Call Anytime</em></small><span><br>(317) 585-8468</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="page-section about-heading">
-        <div class="container"><img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/about.jpg">
-            <div class="about-heading-content">
-                <div class="row">
-                    <div class="col-lg-10 col-xl-9 mx-auto">
-                        <div class="bg-faded rounded p-5">
-                            <h2 class="section-heading mb-4"><span class="section-heading-upper">Strong Coffee, Strong Roots</span><span class="section-heading-lower">&nbsp;About Our Cafe</span></h2>
-                            <p>Founded in 1987 by the Hernandez brothers, our establishment has been serving up rich coffee sourced from artisan farmers in various regions of South and Central America. We are dedicated to travelling the world, finding the best coffee, and bringing back to you here in our cafe.</p>
-                            <p class="mb-0"><span>We guarantee that you will fall in&nbsp;</span><em>lust</em><span>&nbsp;with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="text-center footer text-faded py-5" style="background: rgba(48,47,46,0.9);">
-        <div class="container">
-            <p class="m-0 small">Copyright&nbsp;© NutriCart 2024</p>
-        </div>
-    </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="assets/js/current-day.js"></script>
+<div class = "question" id = "question2" style="display: none;">
+    <h1 id="question">What are your health/nutrition goals?</h1>
+    <div id="answer-buttons">
+        <button class="btn3" onclick="nextQuestion('question3')">Increase energy</button>
+        <button class="btn3" onclick="nextQuestion('question3')">Reduce inflammation</button>
+        <button class="btn3" onclick="nextQuestion('question3')">Enhance cognitive function</button>
+        <button class="btn3" onclick="nextQuestion('question3')">Support heart health</button>
+        <button class="btn3" onclick="nextQuestion('question3')">Boost immune function</button>
+        <button class="btn3" onclick="nextQuestion('question3')">Improve dental health</button>
+    </div>
+</div>
+
+<div class = "question" id = "question3" style="display: none;">
+    <h1 id="question">What are your dietary preferences?</h1>
+    <div id="answer-buttons">
+        <button class="btn1" onclick="nextQuestion('question4')">Vegetarian</button>
+        <button class="btn1" onclick="nextQuestion('question4')">Gluten-Free</button>
+        <button class="btn1" onclick="nextQuestion('question4')">Dairy-Free</button>
+        <button class="btn1" onclick="nextQuestion('question4')">None</button>
+    </div>
+</div>
+
+<div class = "question" id = "question4" style="display: none;">
+    <h1 id="question">Are there any children in your house?</h1>
+    <div id="answer-buttons">
+        <button class="btn" onclick="nextQuestion('question5')">Yes</button>
+        <button class="btn" onclick="nextQuestion('question5')">No</button>
+    </div>
+</div>
+
+<div class = "question" id = "question5" style="display: none;">
+    <h1 id="question">Are there any elderly individuals in your house?</h1>
+    <div id="answer-buttons">
+        <button class="btn" onclick="nextQuestion('question6')">Yes</button>
+        <button class="btn" onclick="nextQuestion('question6')">No</button>
+    </div>
+</div>
+
+<div class = "question" id = "question6" style="display: none;">
+    <h1 id="question">How important is prioritizing affordability to you?</h1>
+    <div id="answer-buttons">
+        <button class="btn2" onclick="nextQuestion('question7')">Very Important</button>
+        <button class="btn2" onclick="nextQuestion('question7')">Somewhat Important</button>
+        <button class="btn2" onclick="nextQuestion('question7')">Not Important</button>
+    </div>
+</div>
+
+<div class = "question" id = "question7" style="display: none;">
+    <h1 id="question">How important is prioritizing quality of food to you?</h1>
+    <div id="answer-buttons">
+        <button class="btn2" onclick="nextQuestion('question8')">Very Important</button>
+        <button class="btn2" onclick="nextQuestion('question8')">Somewhat Important</button>
+        <button class="btn2" onclick="nextQuestion('question8')">Not Important</button>
+    </div>
+</div>
+
+<div class = "question" id = "question8" style="display: none;">
+    <h1 id="question">How important is prioritizing nutrition to you?</h1>
+    <div id="answer-buttons">
+        <button class="btn2" onclick="nextQuestion('question9')">Very Important</button>
+        <button class="btn2" onclick="nextQuestion('question9')">Somewhat Important</button>
+        <button class="btn2" onclick="nextQuestion('question9')">Not Important</button>
+    </div>
+</div>
+
+<div class = "question" id = "question9" style="display: none;">
+    <h1 id="question">How often do you shop?</h1>
+    <div id="answer-buttons">
+        <button class="btn1" onclick="nextQuestion('question10')">Few times a week</button>
+        <button class="btn1" onclick="nextQuestion('question10')">Once a week</button>
+        <button class="btn1" onclick="nextQuestion('question10')">Few times a month</button>
+        <button class="btn1" onclick="nextQuestion('question10')">Once a month</button>
+    </div>
+</div>
+
+<div class = "question" id = "question10" style="display: none;">
+    <h1 id="question">What is your weekly grocery price goal?</h1>
+    <div id="answer-buttons">
+        <button class="btn1" onclick="nextQuestion('question11')">$0-25</button>
+        <button class="btn1" onclick="nextQuestion('question11')">$25-50</button>
+        <button class="btn1" onclick="nextQuestion('question11')">$50-100</button>
+        <button class="btn1" onclick="nextQuestion('question11')">$100+</button>
+    </div>
+</div>
+
+<div class = "question" id = "question11" style="display: none;">
+    <h1 id="question">What is your preferred mode of travel?</h1>
+    <div id="answer-buttons">
+        <button class="btn1" onclick="nextQuestion('question12')">Walk</button>
+        <button class="btn1" onclick="nextQuestion('question12')">Public Transport</button>
+        <button class="btn1" onclick="nextQuestion('question12')">Private Vehicle</button>
+        <button class="btn1" onclick="nextQuestion('question12')">Online Delivery</button>
+    </div>
+</div>
+
+<div class = "question" id = "question12" style="display: none;">
+    <h1 id="question">Do you use / are interested in any of these food assistance programs? </h1>
+    <div id="answer-buttons">
+        <button class="btn1" onclick="nextQuestion('end')">SNAP</button>
+        <button class="btn1" onclick="nextQuestion('end')">WIC</button>
+        <button class="btn1" onclick="nextQuestion('end')">Food Banks</button>
+        <button class="btn1" onclick="nextQuestion('end')">Not Applicable</button>
+    </div>
+</div>
+
+<div class = "end-page" id = "end" style="display: none;">
+    <h1>Thank you for letting us get to know you!</h1>
+</div>
+
+</div>
+
+<script src="assets/js/quiz_format.js"></script>
 </body>
-
 </html>
